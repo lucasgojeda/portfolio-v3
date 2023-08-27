@@ -2,10 +2,11 @@ name: say hello
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      - main
 
 jobs:
-  hello-world:
+  hello_world:
     runs-on: ubuntu-18.04
     steps:
       - name: Echo the message
