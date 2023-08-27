@@ -1,0 +1,206 @@
+.aboutContainer {
+    width: 100vw;
+    height: auto !important;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+}
+
+.titleContainerPrimarias {
+    width: 100vw;
+    height: 10vh;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    // padding-left: 15px;
+
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    overflow: hidden;
+
+
+    h3 {
+        font-size: 22px;
+        overflow: hidden;
+
+        .subrayado {
+            height: 3px;
+            width: 100%;
+            background-color: #5DADE2;
+        }
+    }
+}
+
+
+.ResumenContainer {
+    height: 25vh;
+    width: 100vw;
+    padding-left: 3vw;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 7.5vh;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.ResumenContainer2 {
+    height: 25vh;
+    width: 100vw;
+    padding-left: 3vw;
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 7.5vh;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    // font-size: 22px;
+    font-weight: 400;
+
+    .MuiSvgIcon-root {
+        margin-bottom: -5px;
+        margin-right: 2.5px;
+        color: #3498DB;
+    }
+}
+
+.textColorized {
+    color: #3498DB;
+    /* font: bolder; */
+    font-weight: 700;
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .aboutContainer {
+        width: 100vw;
+        height: auto !important;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ResumenContainer {
+        height: auto;
+        width: 95vw;
+        // padding-left: 3vw;
+        margin-left: -2vw;
+        font-size: 18px;
+        font-family: sans-serif;
+        line-height: 7.5vh;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .ResumenContainer2 {
+        height: auto;
+        width: 95vw;
+        // padding-left: 3vw;
+        margin-left: -2vw;
+        font-size: 18px;
+        font-family: sans-serif;
+        line-height: 7.5vh;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+
+        span .MuiSvgIcon-root {
+            margin-bottom: -5px;
+            color: #3498DB;
+            display: inline-block;
+        }
+    }
+
+    .textColorized {
+        color: #3498DB;
+        /* font: bolder; */
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 600px) {
+    .aboutContainer {
+        width: 100vw;
+        height: auto !important;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden !important;
+    }
+
+    .titleContainerPrimarias {
+        height: 5vh;
+    }
+
+    .ResumenContainer {
+        height: auto;
+        width: 92.5vw;
+        padding-left: 3vw;
+        font-size: 18px;
+        font-family: sans-serif;
+        line-height: 7.5vh;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .ResumenContainer2 {
+        height: auto;
+        width: 92.5vw;
+        padding-left: 3vw;
+        font-size: 18px;
+        font-family: sans-serif;
+        line-height: 7.5vh;
+        font-weight: 500;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+
+        span .MuiSvgIcon-root {
+            margin-bottom: -5px;
+            color: #3498DB;
+            display: inline-block;
+        }
+    }
+
+    .textColorized {
+        color: #3498DB;
+        /* font: bolder; */
+        font-weight: 700;
+    }
+}

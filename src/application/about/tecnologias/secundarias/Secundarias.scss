@@ -1,0 +1,102 @@
+.secundariasContainer {
+  width: 100%;
+  height: 40vh;
+  font-size: 18px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.titleContainerSecundarias {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+
+  h3 {
+    font-size: 22px;
+    overflow: hidden;
+
+    .subrayado {
+      height: 3px;
+      width: 100%;
+      background-color: #5DADE2;
+    }
+  }
+}
+
+.imagesContainerSecundarias {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.imagesContainerSecundarias img {
+  max-height: 75px;
+  width: auto;
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+
+//=== Set button colors
+// If you wonder why use Sass vars or CSS custom properties...
+// Make a map with the class names and matching colors
+$colors: (
+  raise: #3498DB,
+);
+
+// Sass variables compile to a static string; CSS variables are dynamic and inherited
+// Loop through the map and set CSS custom properties using Sass variables
+@each $button,
+$color in $colors {
+  .#{$button} {
+    --color: #{$color};
+    --hover: #{adjust-hue($color, 45deg)};
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .secundariasContainer {
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vh;
+
+    .titleContainerSecundarias {
+      height: 10%;
+    }
+  }
+
+  .imagesContainerSecundarias {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 70vh;
+  }
+
+  .imagesContainerSecundarias img {
+    max-height: 15vw;
+  }
+}

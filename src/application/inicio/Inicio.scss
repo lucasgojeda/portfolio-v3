@@ -1,0 +1,248 @@
+.container {
+    width: 100vw;
+    height: 70vh !important;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+
+    a {
+        color: #fff;
+    }
+
+    .cvContainer {
+        position: absolute;
+        right: 5vw;
+        top: 2.5vh;
+        width: auto;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        overflow: hidden;
+
+        h3 {
+            font-size: 12px;
+
+            .subrayado {
+                height: 2px;
+                width: 100%;
+                background-color: #5DADE2;
+            }
+        }
+
+        .MuiSvgIcon-root {
+            font-size: 25px;
+            color: #5DADE2;
+        }
+    }
+}
+
+.arrowDownContainer {
+    position: absolute;
+    left: calc(50% - 25px);
+    top: 90%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.containerTitleAndPicture {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+}
+
+.containerTitleAndType {
+    width: 50vw;
+    height: 100%;
+    font-size: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.containerTitle {
+    max-width: 100%;
+    height: 37.5vh;
+    display: flex;
+    align-items: flex-end;
+    text-align: start;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.containerType {
+    max-width: 100%;
+    height: 37.5vh;
+    display: flex;
+    align-items: flex-start;
+    text-align: start;
+    color: #5DADE2;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.containerPicture {
+    width: 50vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3498DB;
+    font-weight: 600;
+
+
+    img {
+
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        object-position: 20% 10%;
+        border-radius: 50%;
+    }
+
+    .iconLinkedinContainer {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+
+        .MuiSvgIcon-root {
+            font-size: 55px;
+            color: #0e76a8;
+            cursor: pointer;
+        }
+    }
+}
+
+.pictureIcon.MuiSvgIcon-root {
+    font-size: 200px;
+}
+
+
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .container {
+        width: 100vw;
+        height: 70vh !important;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+
+
+    .containerTitleAndPicture {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+    }
+
+    .containerTitleAndType {
+        width: 100%;
+        height: 35vh;
+        font-size: 26px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerTitle {
+        max-width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: flex-end;
+        text-align: start;
+        font-weight: 500;
+    }
+
+    .containerType {
+        max-width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: flex-start;
+        text-align: start;
+        color: #5DADE2;
+        font-weight: 600;
+    }
+
+    .containerPicture {
+        width: 100%;
+        height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #3498DB;
+        font-weight: 600;
+    }
+
+    .pictureIcon.MuiSvgIcon-root {
+        font-size: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        height: 70vh !important;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+
+    .containerTitleAndPicture {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+    }
+
+    .containerTitleAndType {
+        width: 100%;
+        height: 35vh;
+        font-size: 26px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerTitle {
+        max-width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: flex-end;
+        text-align: start;
+        font-weight: 500;
+    }
+
+    .containerType {
+        max-width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: flex-start;
+        text-align: start;
+        color: #5DADE2;
+        font-weight: 600;
+    }
+
+    .containerPicture {
+        width: 100%;
+        height: 35vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #3498DB;
+        font-weight: 600;
+    }
+
+    .pictureIcon.MuiSvgIcon-root {
+        font-size: 200px;
+    }
+}

@@ -1,0 +1,38 @@
+.loadingPageContainer {
+    height: 100%;
+    max-width: 100%;
+    overflow: hidden !important;
+
+
+    .planetContainer {
+        position: absolute;
+        left: -200px;
+        bottom: -200px;
+
+        img {
+
+            width: 500px;
+            height: 500px;
+            object-fit: contain;
+        }
+    }
+}
+
+
+@media (min-width: 0px) and (max-width: 350px) {
+    .loadingPageContainer {
+
+        .planetContainer {
+            position: absolute;
+            left: -75px;
+            bottom: -250px;
+
+            img {
+
+                width: 500px;
+                height: 500px;
+                object-fit: contain;
+            }
+        }
+    }
+}

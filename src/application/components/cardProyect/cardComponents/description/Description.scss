@@ -1,0 +1,39 @@
+.descripcion {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 55vw;
+    min-height: 20vh;
+    padding-left: 2.5vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+
+    .descripcion {
+        font-size: 16px;
+        font-weight: 400;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding-left: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 600px) {
+
+    .descripcion {
+        font-size: 16px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        max-width: 100%;
+        height: auto;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+}
