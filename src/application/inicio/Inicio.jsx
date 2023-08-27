@@ -80,7 +80,7 @@ export const Inicio = ({ scrollToElement }) => {
 
             <div className="containerType">
               <Typography variant="p">
-                Deployed to aws s3 service using CI/CD
+                Deployed to aws s3 service using CI/CD!!!
               </Typography>
             </div>
           </div>
